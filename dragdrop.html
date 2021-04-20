@@ -1,0 +1,214 @@
+ <!DOCTYPE HTML>
+
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway Dots' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Thasadith' rel='stylesheet'>
+<style>
+  body {
+  background-color: rgba(237, 252, 249);
+}
+  .div-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    line-height: normal;
+    height: auto;
+    text-align: center;
+    font-family: 'Raleway Dots'; font-size: 25px;
+    color: rgba(2, 90, 110, 0.65);
+  }
+  .section {
+    width: 100%;
+    align-self: stretch;
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-color {
+    position: relative;
+    margin-top: 20px;
+    text-align: left;
+    opacity: 1;
+    padding-left: 160px;
+    padding-top: 10px;
+    padding-right: 160px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(205, 226, 221, 0.9);
+    margin-bottom: 30px;
+    font-family: 'Thasadith';
+  }
+
+  .div-fix {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    height: auto;
+    text-align: left;
+    opacity: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    margin-top: 10px;
+    color: rgba( 2, 90, 110);
+    font-size: 17px;
+  }
+
+  .div-sen {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    height: 35px;
+    text-align: left;
+    opacity: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    margin-top: 2px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    border-bottom: 1px dashed rgba( 2, 90, 110, 65%);
+    color: rgba( 2, 90, 110);
+    font-size: 17px;
+  }
+  .div-ex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: normal;
+    height: 35px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /*border-bottom: 1px dashed rgba( 50, 90, 110, 25%);*/
+    font-family: 'Thasadith'; font-size: 15;
+    color: rgba( 50, 90, 110)
+  }
+     body,
+      #txt,
+      #txt2,
+      #hide, #hide2 {
+        font: inherit;
+        margin: 0;
+        padding: 0;
+        /*background-color: rgba(205, 226, 221, 0.75);*/
+      }
+
+      #txt, #txt2 {
+        border: none;
+        color: #79a4ad;
+        min-width: 10px;
+      }
+
+      #txt, #txt2 :focus-visible {
+        outline: none;
+      }
+
+      #hide, #hide2{
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        white-space: pre;
+      }
+      #point4, #ex4
+      {
+        display: inline;
+      }
+</style>
+</head>
+ 
+
+<body>
+
+<div class="div-title">
+    <p><strong>MAKE YOUR OWN PARAGRAPH</strong></p>
+</div>
+
+<div class="div-color">
+  <div class="div-fix">
+    <p>There is an interesting relationship between 
+    <span id="hide"></span><input id="txt" type="text" value="type topic 1"> and <span id="hide2"></span><input id="txt2" type="text" value="type topic 2">.
+    </p>
+  </div>
+
+  <div class="div-sen" ondrop="drop(event)" ondragover = "dropNow(event)"></div>
+
+  <div class="div-fix"><p>Thereby,</p></div>
+
+  <div class="div-sen" ondrop="drop(event)" ondragover = "dropNow(event)"></div>
+</div>
+
+<div class="div-title"><p><strong>EXAMPLE TEXTS <br> (Drag & Drop) </strong></p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex1">Murder rate in the US increased by more than 25% in 2020.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex2">Gun sales in the US increased by 64% in 2020.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex3">Year-over-year growth in average hourly earnings skyrocketed to about 8 percent.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex4">The US economy lost 21 million jobs in April 2020.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex5">Single family property taxes in U.S. jumped 5.4% in 2020.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex6">Number of suicides in the US have fallen overall by 5% in 2020 but has risen by 27.7 percent among Black residents.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex7">About 98% of the books that publishers released in 2020 sold fewer than 5000 copies.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex8">North American transaction activity for warehouses have increased by 25% in 2020.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex9">Estimated 17.8% of adults ages 25 to 34 live in their parents' household.</p></div>
+<div class="div-ex" ondrop="drop(event)" ondragover = "dropNow(event)">
+          <p ondragstart = "dragStart(event)" ondrag = "draggingNow(event)"
+         draggable = "true" id = "ex10">Healthcare firms saw fees rise more than 30% in 2020.</p></div>
+
+
+      <script>
+         function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+         }
+         function draggingNow(event) {
+            document.getElementById("box").innerHTML = "Dragged successfully!";
+         }
+         function dropNow(event) {
+            event.preventDefault();
+         }
+         function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            document.getElementById("box").innerHTML = "The element dropped successfully!";
+         }
+         var hide = document.getElementById('hide');
+         var txt = document.getElementById('txt');
+         var hide2 = document.getElementById('hide2');
+         var txt2 = document.getElementById('txt2');
+         resize();
+         txt.addEventListener("input", resize);
+         txt2.addEventListener("input", resize);
+
+         function resize() {
+            hide.textContent = txt.value;
+            hide2.textContent = txt2.value;
+            txt.style.width = hide.offsetWidth + "px";
+            txt2.style.width = hide2.offsetWidth + "px";
+          }
+      </script>
+
+</body>
+</html>

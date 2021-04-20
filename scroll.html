@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway Dots' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Thasadith' rel='stylesheet'>
+<style>
+html{
+  scroll-behavior: smooth;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+}
+
+
+
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 47.5%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 400 20px/1 'Raleway Dots';
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+.last a {
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 400 20px/1 'Raleway Dots';
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.last a:hover {
+  opacity: .5;
+}
+
+
+
+#section01{ background-image: linear-gradient(rgba(205, 226, 221, 20%), rgba(205, 226, 221, 35%))}
+#section02{ background-image: linear-gradient(rgba(205, 226, 221, 35%),rgba(205, 226, 221, 50%))}
+#section03{ background-image: linear-gradient(rgba(205, 226, 221, 50%),rgba(205, 226, 221, 65%))}
+#section04{ background-image: linear-gradient(rgba(205, 226, 221, 65%),rgba(205, 226, 221, 80%))}
+#section05{ background-image: linear-gradient(rgba(205, 226, 221, 80%),rgba(205, 226, 221, 100%))}
+
+#section01 a {
+  padding-top: 60px;
+}
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgba(2, 90, 110, 0.65);
+  border-bottom: 1px solid rgba(2, 90, 110, 0.65);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section02 a {
+  padding-top: 60px;
+}
+#section02 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgba(2, 90, 110, 0.65);
+  border-bottom: 1px solid rgba(2, 90, 110, 0.65);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section03 a {
+  padding-top: 60px;
+}
+#section03 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgba(2, 90, 110, 0.65);
+  border-bottom: 1px solid rgba(2, 90, 110, 0.65);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section04 a {
+  padding-top: 60px;
+}
+#section04 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgba(2, 90, 110, 0.65);
+  border-bottom: 1px solid rgba(2, 90, 110, 0.65);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#section05 a {
+  padding-top: 60px;
+}
+#section05 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgba(2, 90, 110, 0.65);
+  border-bottom: 1px solid rgba(2, 90, 110, 0.65);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+
+#section01 h1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 42px/1 'Raleway Dots';
+
+  white-space: nowrap;
+}
+
+#text01 {
+  text-align: right;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 25px/1 'Raleway Dots';
+  line-height: 1.6;
+
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+
+}
+
+
+#text02 {
+  text-align: left;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 25px/1 'Raleway Dots';
+  line-height: 1.6;
+
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+
+}
+
+
+#text03a {
+  text-align: left;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 25px/1 'Raleway Dots';
+  line-height: 1.6;
+
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+#text03b {
+  text-align: right;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 25px/1 'Raleway Dots';
+  line-height: 1.6;
+
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+#text04 {
+  text-align: left;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 25px/1 'Raleway Dots';
+  line-height: 1.6;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+#text05 {
+  text-align: center;
+  color: rgba(2, 90, 110, 0.65);
+  font : normal 300 25px/1 'Raleway Dots';
+  line-height: 1.6;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+</style>
+</head>
+<body>
+
+
+<section id="section01" class="demo">
+  <h1><strong>Compare these sentences:</strong></h1>
+  <div id="text01">
+    <p><strong>According to Washington Post, murder rate in the US increased by more than 25% in 2020.
+     <br> Thereby, gun sales in the US increased by 64% in 2020. </strong></p>
+  </div>
+  <a href="#section02"><span></span>Scroll</a>
+</section>
+<section id="section02" class="demo">
+  <div id="text02">
+    <p><strong>According to Washington Post, Gun sales in the US increased by 64% in 2020.
+      <br> Thereby, based on FBI data, murder rate in the US increased by more than 25% in 2020.
+      </strong></p>
+  </div>
+  <a href="#section03"><span></span>Scroll</a>
+</section>
+<section id="section03" class="demo">
+  <div id="text03a">
+    <p><strong>The first sentence implies that because of the alarming rise in crime,
+    <br>people may be buying more guns to protect themselves. <br> </strong></p>
+  </div>
+  <div id="text03b">
+    <p> <strong> The second sentence, on the other hand, implies that
+    <br>because there are more guns, there is more crime. </strong></p>
+  </div>
+  <a href="#section04"><span></span>Scroll</a>
+</section>
+<section id="section04" class="demo">
+  <div id="text04">
+    <p><strong>These two sentences were taken from two different articles in the Washington Post. <br>
+      <br> Because of the causation that the order of these sentences imply,
+      <br> and also because of the authority we give news agencies and statistical figures,
+      <br> it is fairly easy to write similarly believeable narratives, whether they are true or not.</strong></p>
+  </div>
+  <a href="#section05"><span></span>Scroll</a>
+</section>
+<section id="section05" class="last">
+  <div id="text05">
+    <p><strong> You can write these narratives, too. 
+      <br> <br> <br> As you experiment, stay aware of the hidden story that you are writing.</strong></p>
+
+  </div>
+  <a href="dragdrop.html"><span></span>MAKE YOUR OWN DATA NARRATIVE</a>
+</section>
+
+
+<!-- <script type="text/javascript">
+  $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>>
+ -->
+</body>
+</html>
